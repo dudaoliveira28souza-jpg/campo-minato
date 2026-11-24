@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Campo Minato</title>
+<style>
+  body {font-family: Ariel, sans-serif; background: #222; color: #fff; text-align: center;}
+canvas {background: #888; cursor: pointer; }
+#info {font-size: 22px; margin: 10px;}
+</style>
+</head>
+<body>
+<h1>Campo Minato</h1>
+<!-- PASSO 1 -->
+<div id="info"></div>
+<canvas id="tela"></canvas>
+<p>Clique: abrir | Botão direito: bandeira | R: reiniciar</p>
+<script>
+// ===== PASSO 2: configurar =====
+const canvas = document.getElementById("tela")
+const ctx = canvas,getContext("2d")
+const info = document.getElementById("info")
